@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>💎 Lucro do Dia 2.0</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- SEO & Manifest -->
+  <meta name="description" content="💎 Lucro do Dia — Ofertas, Missões e Recompensas Diárias. Descubra novas formas de lucrar todos os dias.">
+  <meta name="keywords" content="cashback, lucros, ofertas, IA, educação, finanças, ferramentas">
+  <meta name="theme-color" content="#3D5AFE">
+  <meta property="og:title" content="Lucro do Dia 2.0">
+  <meta property="og:description" content="Descubra como lucrar todos os dias com missões e recompensas!">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/preview.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/favicon.png">
+</head>
+<body>
+  <main id="app">
+    <section id="home" class="page-section active" data-section>
+      <header class="home-header">
+        <h1 class="logo">💎 Lucro do Dia</h1>
+        <input type="text" class="search-bar" placeholder="Busque por ofertas, artigos ou categorias..." />
+      </header>
+
+      <nav class="quick-links">
+        <button class="quick-link-btn"><span class="quick-link-icon">💰</span> Finanças</button>
+        <button class="quick-link-btn"><span class="quick-link-icon">🎓</span> Educação</button>
+        <button class="quick-link-btn"><span class="quick-link-icon">🛠️</span> Ferramentas</button>
+        <button class="quick-link-btn"><span class="quick-link-icon">🤖</span> Apps & IA</button>
+        <button class="quick-link-btn"><span class="quick-link-icon">➕</span> Ver mais</button>
+      </nav>
+
+      <section class="banner-area">
+        <div class="banner">
+          <img src="https://picsum.photos/800/300?random=1" alt="Banner de destaque">
+          <div class="banner-text">
+            <h2>💥 Oferta da Semana</h2>
+            <p>Aproveite e descubra oportunidades incríveis!</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-section">
+        <h2 class="section-title">💼 Serviços Lucro do Dia</h2>
+        <div class="services-grid">
+          <div class="service-card" title="Finanças"><span class="service-icon">💰</span><p>Finanças</p></div>
+          <div class="service-card" title="Educação"><span class="service-icon">🎓</span><p>Educação</p></div>
+          <div class="service-card" title="Ferramentas"><span class="service-icon">🛠️</span><p>Ferramentas</p></div>
+          <div class="service-card" title="Apps & IA"><span class="service-icon">🤖</span><p>Apps & IA</p></div>
+        </div>
+      </section>
+
+      <section class="trending-section">
+        <h2 class="section-title">🔥 Em Alta</h2>
+        <div class="trending-list">
+          <div class="trending-card">
+            <img src="https://picsum.photos/seed/trend1/90/90" alt="Destaque 1">
+            <div class="trending-info">
+              <h3>Ganhe pontos assistindo vídeos</h3>
+              <p>Descubra formas de acumular recompensas diárias.</p>
+            </div>
+          </div>
+          <div class="trending-card">
+            <img src="https://picsum.photos/seed/trend2/90/90" alt="Destaque 2">
+            <div class="trending-info">
+              <h3>Ofertas imperdíveis da semana</h3>
+              <p>Economize com cashback e descontos exclusivos.</p>
+            </div>
+          </div>
+          <div class="trending-card">
+            <img src="https://picsum.photos/seed/trend3/90/90" alt="Destaque 3">
+            <div class="trending-info">
+              <h3>Novos parceiros e benefícios</h3>
+              <p>Explore novas oportunidades de ganho exclusivas.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="home-shelves"></div>
+    </section>
+
+    <section id="explorar" data-section>
+      <div class="explorar-header">
+        <h2 class="section-title">🧭 Explorar Categorias</h2>
+      </div>
+      <div class="explorar-grid">
+        <div class="cat-card" data-cat="financas" title="Finanças">
+          <span class="cat-icon">💰</span>
+          <p>Finanças</p>
+        </div>
+        <div class="cat-card" data-cat="educacao" title="Educação">
+          <span class="cat-icon">🎓</span>
+          <p>Educação</p>
+        </div>
+        <div class="cat-card" data-cat="ferramentas" title="Ferramentas">
+          <span class="cat-icon">🛠️</span>
+          <p>Ferramentas</p>
+        </div>
+        <div class="cat-card" data-cat="apps" title="Apps & IA">
+          <span class="cat-icon">🤖</span>
+          <p>Apps & IA</p>
+        </div>
+        <div class="cat-card" data-cat="compras" title="Compras">
+          <span class="cat-icon">🛒</span>
+          <p>Compras</p>
+        </div>
+        <div class="cat-card" data-cat="saude" title="Saúde">
+          <span class="cat-icon">🏥</span>
+          <p>Saúde</p>
+        </div>
+      </div>
+      <div class="explorar-list" id="explorar-list"></div>
+    </section>
+
+    <section id="missions" data-section>
+      <section class="missions-section">
+        <h2 class="section-title">🎯 Minhas Missões</h2>
+        
+        <div class="mission-highlight">
+          <h3>🏆 Missão da Semana</h3>
+          <p>Complete 3 tarefas e ganhe +200 pontos</p>
+          <div class="progress-bar"><div class="progress-fill" style="width:60%"></div></div>
+        </div>
+
+        <div class="missions-list" id="missions-list"></div>
+      </section>
+    </section>
+
+    <section id="perfil" data-section>
+      <section class="perfil-section">
+        <h2 class="section-title">👤 Meu Perfil</h2>
+
+        <div class="perfil-wallet">
+          <h3>💰 Carteira de Pontos</h3>
+          <p><strong id="perfil-pontos">0</strong> pontos</p>
+        </div>
+
+        <div class="perfil-history">
+          <h3>📜 Histórico de Missões</h3>
+          <ul id="perfil-historico"></ul>
+        </div>
+
+        <div class="perfil-settings">
+          <h3>⚙️ Configurações</h3>
+          <button id="btn-logout" class="btn-primary">Sair</button>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <nav id="bottom-nav" class="bottom-nav" aria-label="Navegação inferior"></nav>
+
+  <site-footer></site-footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
